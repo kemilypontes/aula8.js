@@ -1,0 +1,41 @@
+const produto = [
+  "Álbum Proof",
+  "Lightstick oficial ARMY Bomb",
+  "Camiseta oficial BTS com logo do grupo",
+  "Boné Love Yourself",
+  "Mochila BTS com patch dos integrantes",
+  "Pôster oficial da turnê Map of the Soul",
+  "Photocard set dos membros",
+  "Pulseira BTS com pingente do logo",
+  "Caderno temático Butter",
+  "Capinha de celular personalizada com o nome do integrante favorito"
+]
+
+const valores = [250.00, 400.00, 120.00, 100.00, 180.00, 50.00, 60.00, 40.00, 30.00, 50.00]
+
+// Mostrar estoque inicial
+function mostrarEstoque(){
+    console.log(" #####ESTOQUE#####")
+    let contador = 0
+    while (contador < produto.length) {
+        console.log(produto[contador] + " - R$ " + valores[contador])
+        contador++
+    }
+}
+mostrarEstoque()
+// Adicionar produto
+function adicionarProduto(nomeProduto, valorProduto) {
+    produto.push(nomeProduto);
+    valores.push(valorProduto);
+    console.log('Produto "${nomeProduto}" adicionado com sucesso por R$ $');
+  }
+
+produto.push("Moletom oficial BTS Permission to Dance")
+valores.push(200.00)
+mostrarEstoque()
+
+// Remover o último produto
+produto.pop()
+valores.pop()
+mostrarEstoque()
+
