@@ -1,0 +1,24 @@
+const produtosArquivo = require("./produtos.json")
+console.log(produtosArquivo)
+
+produtosArquivo.forEach((produto)=>{
+    console.log(produto.nome + 
+        " - " + produto.valor + 
+        " -  " + produto.quantidade + 
+        " - " + produto.peso + 
+        " -  " + produto.marca +   
+        " -  " + produto.codigo)
+})
+
+function mostrarESTOQUE() {
+    let contador = 0
+  while(contador <produtos.length){
+      console.log(contador + " - " + produtos[contador] + " - " + valores[contador] + " - " + quantidade[contador] + " - " + peso[contador] + " - " + marca[contador] + " - " + codigo[contador])
+contador++
+  }
+}
+
+function adicionarPRODUTO(nome, valor, quantidade, peso, marca, codigo) {
+    produtos.push("Macarrão")
+    valores.push("R$ 17,00")
+}
